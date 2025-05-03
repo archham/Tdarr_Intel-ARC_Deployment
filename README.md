@@ -12,7 +12,7 @@ The latest probably works FINE, but just a note!
 - **v5:** Enhanced quality and simplified workflow 
 - **v6:** Added a Special-ish Variable - If file is still to big, try again at a slightly lower quality
 
-<img width="1124" alt="image" src="https://github.com/user-attachments/assets/4956d1d8-8c82-4f9c-95ac-e2df0bc85fb9" />
+<img width="1124" alt="image" src="https://github.com/user-attachments/assets/b5fc9515-e4ee-4ad4-8c32-f68ffa5810bf" />
 
 ---
 
