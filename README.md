@@ -11,6 +11,7 @@ The latest probably works FINE, but just a note!
 - **v4:** Removed images from files, cutting failure rates from ~25% to 1–2%  
 - **v5:** Enhanced quality and simplified workflow 
 - **v6:** Added a Special-ish Variable - If file is still to big, try again at a slightly lower quality
+- **v7:** Removed the Variable `"inputArguments": "-hwaccel qsv"` that could fail the transcode - missing hardware decoding for VC-1 on Intel Meteor Lake / Core Ultra 100-series integrated graphics
 
 <img width="1124" alt="image" src="https://github.com/user-attachments/assets/b5fc9515-e4ee-4ad4-8c32-f68ffa5810bf" />
 

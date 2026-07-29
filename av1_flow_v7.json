@@ -1,0 +1,722 @@
+{
+  "_id": "9KhJeQnWc",
+  "name": "AV1 PlexGuide",
+  "description": "AV1 PlexGuide",
+  "tags": "",
+  "flowPlugins": [
+    {
+      "name": "Compare File Size",
+      "sourceRepo": "Community",
+      "pluginName": "compareFileSize",
+      "version": "1.0.0",
+      "id": "aSv4ZEQr0",
+      "position": {
+        "x": 864.0526573923008,
+        "y": 1116.2965203911474
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Execute v2",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "4dhJKjMSt",
+      "position": {
+        "x": 863.5709093108882,
+        "y": 1045.095079548084
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Original File",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "-yhk4Lit6",
+      "position": {
+        "x": 864.7905993907958,
+        "y": 700.9164275393335
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Reorder Streams v2",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRorderStreams",
+      "version": "1.0.0",
+      "inputsDB": {
+        "languages": "deu"
+      },
+      "id": "QH2w5YhQD",
+      "position": {
+        "x": 863.6695547299905,
+        "y": 972.5141751677876
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Custom Arguments",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-max_muxing_queue_size 1024 -global_quality {{{args.variables.user.qual}}} -preset veryslow",
+        "inputArguments": ""
+      },
+      "id": "QjFeVXDLt",
+      "position": {
+        "x": 863.72755836375,
+        "y": 897.395614390664
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Video Encoder",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetVideoEncoder",
+      "version": "1.0.0",
+      "inputsDB": {
+        "outputCodec": "av1",
+        "ffmpegPreset": "veryslow",
+        "hardwareType": "qsv",
+        "ffmpegQuality": "15",
+        "hardwareEncoding": "true",
+        "hardwareDecoding": "false",
+        "forceEncoding": "true",
+        "ffmpegPresetEnabled": "false",
+        "ffmpegQualityEnabled": "false"
+      },
+      "id": "raEaO2cfG",
+      "position": {
+        "x": 864.0681729637706,
+        "y": 821.2203756022644
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Special-ish",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "qual",
+        "value": "34"
+      },
+      "id": "g26dVAvQm",
+      "position": {
+        "x": 864.580649855845,
+        "y": 761.2082282367719
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Notify Overseas",
+      "sourceRepo": "Community",
+      "pluginName": "notifyRadarrOrSonarr",
+      "version": "2.0.0",
+      "inputsDB": {
+        "arr": "sonarr",
+        "arr_api_key": "3ff8afc8581c4a83bef1b9fb1c67a90f",
+        "arr_host": "http://10.0.0.10:8988"
+      },
+      "id": "b6oMqri3E",
+      "position": {
+        "x": 508.00902323510854,
+        "y": 890.4896778743216
+      },
+      "fpEnabled": false
+    },
+    {
+      "name": "1080p-ish",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "qual",
+        "value": "29"
+      },
+      "id": "umaTXsNaU",
+      "position": {
+        "x": 886.2105927429751,
+        "y": 459.06404297022146
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "720p-ish",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "qual",
+        "value": "29"
+      },
+      "id": "aDgfTP2rV",
+      "position": {
+        "x": 714.4956705233233,
+        "y": 459.55727236588444
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "4K-ish",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "qual",
+        "value": "29"
+      },
+      "id": "1RHemRpJV",
+      "position": {
+        "x": 1064.088056678407,
+        "y": 458.9321936436676
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Custom Arguments",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandCustomArguments",
+      "version": "1.0.0",
+      "inputsDB": {
+        "outputArguments": "-max_muxing_queue_size 1024 -global_quality {{{args.variables.user.qual}}} -preset veryslow",
+        "inputArguments": ""
+      },
+      "id": "2mA1B19I3",
+      "position": {
+        "x": 1249.2364145893625,
+        "y": 676.265049777054
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Input File",
+      "sourceRepo": "Community",
+      "pluginName": "inputFile",
+      "version": "1.0.0",
+      "id": "y4lqcdrho",
+      "position": {
+        "x": 677.4638992180268,
+        "y": 125.13545433735806
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Check Video Codec",
+      "sourceRepo": "Community",
+      "pluginName": "checkVideoCodec",
+      "version": "1.0.0",
+      "inputsDB": {
+        "codec": "av1"
+      },
+      "id": "x4UqtuCK9",
+      "position": {
+        "x": 677.1494093193062,
+        "y": 188.65569578722938
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Begin Command",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandStart",
+      "version": "1.0.0",
+      "id": "6a0HyfVUa",
+      "position": {
+        "x": 890.9235917229998,
+        "y": 262.9705269767009
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Execute",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandExecute",
+      "version": "1.0.0",
+      "id": "OBbLCZ8SO",
+      "position": {
+        "x": 1043.586335792646,
+        "y": 593.3508367485185
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Video Encoder",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetVideoEncoder",
+      "version": "1.0.0",
+      "inputsDB": {
+        "outputCodec": "av1",
+        "ffmpegPreset": "veryslow",
+        "hardwareType": "qsv",
+        "ffmpegQuality": "15",
+        "hardwareEncoding": "true",
+        "hardwareDecoding": "false",
+        "forceEncoding": "true",
+        "ffmpegPresetEnabled": "false",
+        "ffmpegQualityEnabled": "false"
+      },
+      "id": "nvhiecc42",
+      "position": {
+        "x": 1249.3149164408242,
+        "y": 599.6007194577442
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Set Container",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandSetContainer",
+      "version": "1.0.0",
+      "id": "5sziHU00e",
+      "position": {
+        "x": 1249.395964424632,
+        "y": 751.1050500496168
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Replace Original File",
+      "sourceRepo": "Community",
+      "pluginName": "replaceOriginalFile",
+      "version": "1.0.0",
+      "id": "xG56Of7cp",
+      "position": {
+        "x": 516.1478251738444,
+        "y": 702.9416042912337
+      },
+      "fpEnabled": false
+    },
+    {
+      "name": "Check Video Resolution",
+      "sourceRepo": "Community",
+      "pluginName": "checkVideoResolution",
+      "version": "1.0.0",
+      "id": "Fipyujmi9",
+      "position": {
+        "x": 890.9550395221771,
+        "y": 342.7271738720112
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Reorder Streams",
+      "sourceRepo": "Community",
+      "pluginName": "ffmpegCommandRorderStreams",
+      "version": "1.0.0",
+      "inputsDB": {
+        "languages": "deu"
+      },
+      "id": "JGSpkpZJZ",
+      "position": {
+        "x": 1249.5287480461875,
+        "y": 823.5597714810827
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Compare File Size",
+      "sourceRepo": "Community",
+      "pluginName": "compareFileSize",
+      "version": "1.0.0",
+      "id": "abUXrdfpu",
+      "position": {
+        "x": 847.0397080516606,
+        "y": 595.7998275583685
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Fail Flow",
+      "sourceRepo": "Community",
+      "pluginName": "failFlow",
+      "version": "1.0.0",
+      "id": "PGuZs5nAA",
+      "position": {
+        "x": 882.4110331474649,
+        "y": 1214.9540597088483
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Notify TV",
+      "sourceRepo": "Community",
+      "pluginName": "notifyRadarrOrSonarr",
+      "version": "2.0.0",
+      "inputsDB": {
+        "arr": "sonarr",
+        "arr_api_key": "a03c86b6292c4bd48cd5e3b84e5a4702",
+        "arr_host": "http://10.0.0.10:8989"
+      },
+      "id": "7cEM9Ueje",
+      "position": {
+        "x": 514.0946739096216,
+        "y": 766.750018436483
+      },
+      "fpEnabled": false
+    },
+    {
+      "name": "Notify Movies",
+      "sourceRepo": "Community",
+      "pluginName": "notifyRadarrOrSonarr",
+      "version": "2.0.0",
+      "inputsDB": {
+        "arr_api_key": "fff4318f18ca48da8fb33a9fe5b136c2",
+        "arr_host": "http://10.0.0.10:7878"
+      },
+      "id": "afcN2Nl97",
+      "position": {
+        "x": 512.2614800182577,
+        "y": 819.5561052535022
+      },
+      "fpEnabled": false
+    },
+    {
+      "name": "Set Original File",
+      "sourceRepo": "Community",
+      "pluginName": "setOriginalFile",
+      "version": "1.0.0",
+      "id": "nlAVmhQV3",
+      "position": {
+        "x": 676.2651969849168,
+        "y": 258.83642265420497
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Removing Image (Prevents Failures)",
+      "sourceRepo": "Community",
+      "pluginName": "runClassicTranscodePlugin",
+      "version": "1.0.0",
+      "inputsDB": {
+        "pluginSourceId": "Community:Tdarr_Plugin_MC93_MigzImageRemoval"
+      },
+      "id": "jz_648bNe",
+      "position": {
+        "x": 890.6376547778729,
+        "y": 191.36117243688585
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "480p-ish ",
+      "sourceRepo": "Community",
+      "pluginName": "setFlowVariable",
+      "version": "1.0.0",
+      "inputsDB": {
+        "variable": "qual",
+        "value": "30"
+      },
+      "id": "CqvMoHan9",
+      "position": {
+        "x": 544.4521775478631,
+        "y": 458.88453203907955
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "If the file is too big for conversion (as in goes over 100%) try again at a slightly lower quality. Change Special-ish value!",
+      "sourceRepo": "Community",
+      "pluginName": "comment",
+      "version": "1.0.0",
+      "id": "2-upGovUr",
+      "position": {
+        "x": 1051.1788265630616,
+        "y": 673.8680141447887
+      },
+      "fpEnabled": true
+    },
+    {
+      "name": "Move To Directory",
+      "sourceRepo": "Community",
+      "pluginName": "moveToDirectory",
+      "version": "2.0.0",
+      "id": "npa50pHSl",
+      "position": {
+        "x": 692.6498405812174,
+        "y": 699.5625593190643
+      },
+      "fpEnabled": true,
+      "inputsDB": {
+        "outputDirectory": "/media/media/try_gpu_tdarr"
+      }
+    }
+  ],
+  "flowEdges": [
+    {
+      "source": "y4lqcdrho",
+      "sourceHandle": "1",
+      "target": "x4UqtuCK9",
+      "targetHandle": null,
+      "id": "c6kYE6bDM"
+    },
+    {
+      "source": "5sziHU00e",
+      "sourceHandle": "1",
+      "target": "JGSpkpZJZ",
+      "targetHandle": null,
+      "id": "c0KV-6y1i"
+    },
+    {
+      "source": "JGSpkpZJZ",
+      "sourceHandle": "1",
+      "target": "OBbLCZ8SO",
+      "targetHandle": null,
+      "id": "FKFIiJuWU"
+    },
+    {
+      "source": "2mA1B19I3",
+      "sourceHandle": "1",
+      "target": "5sziHU00e",
+      "targetHandle": null,
+      "id": "XWXHFS4_s"
+    },
+    {
+      "source": "OBbLCZ8SO",
+      "sourceHandle": "1",
+      "target": "abUXrdfpu",
+      "targetHandle": null,
+      "id": "g2yPKEkmj"
+    },
+    {
+      "source": "xG56Of7cp",
+      "sourceHandle": "1",
+      "target": "7cEM9Ueje",
+      "targetHandle": null,
+      "id": "ntS8LAKo4"
+    },
+    {
+      "source": "x4UqtuCK9",
+      "sourceHandle": "1",
+      "target": "nlAVmhQV3",
+      "targetHandle": null,
+      "id": "HZAaivi_-"
+    },
+    {
+      "source": "nvhiecc42",
+      "sourceHandle": "1",
+      "target": "2mA1B19I3",
+      "targetHandle": null,
+      "id": "6iDzYQozd"
+    },
+    {
+      "source": "6a0HyfVUa",
+      "sourceHandle": "1",
+      "target": "Fipyujmi9",
+      "targetHandle": null,
+      "id": "4GAVgfzgA"
+    },
+    {
+      "source": "7cEM9Ueje",
+      "sourceHandle": "2",
+      "target": "afcN2Nl97",
+      "targetHandle": null,
+      "id": "tyBp5ms9Q"
+    },
+    {
+      "source": "x4UqtuCK9",
+      "sourceHandle": "2",
+      "target": "jz_648bNe",
+      "targetHandle": null,
+      "id": "r4DwBp2m_"
+    },
+    {
+      "source": "jz_648bNe",
+      "sourceHandle": "1",
+      "target": "6a0HyfVUa",
+      "targetHandle": null,
+      "id": "sMxtCh2Xl"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "1",
+      "target": "CqvMoHan9",
+      "targetHandle": null,
+      "id": "UDBCQ2S9_"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "2",
+      "target": "CqvMoHan9",
+      "targetHandle": null,
+      "id": "_wzRwyK5R"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "3",
+      "target": "aDgfTP2rV",
+      "targetHandle": null,
+      "id": "DMmTfKp7O"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "4",
+      "target": "umaTXsNaU",
+      "targetHandle": null,
+      "id": "0ypeJQheH"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "5",
+      "target": "umaTXsNaU",
+      "targetHandle": null,
+      "id": "u6IilK_Zk"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "6",
+      "target": "1RHemRpJV",
+      "targetHandle": null,
+      "id": "EC6Oz6GbX"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "7",
+      "target": "1RHemRpJV",
+      "targetHandle": null,
+      "id": "jufEluCO8"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "8",
+      "target": "1RHemRpJV",
+      "targetHandle": null,
+      "id": "OvRNXQ0mP"
+    },
+    {
+      "source": "Fipyujmi9",
+      "sourceHandle": "9",
+      "target": "1RHemRpJV",
+      "targetHandle": null,
+      "id": "k5oB3RghY"
+    },
+    {
+      "source": "1RHemRpJV",
+      "sourceHandle": "1",
+      "target": "nvhiecc42",
+      "targetHandle": null,
+      "id": "yH-QnmSkx"
+    },
+    {
+      "source": "umaTXsNaU",
+      "sourceHandle": "1",
+      "target": "nvhiecc42",
+      "targetHandle": null,
+      "id": "4MsPsA-0v"
+    },
+    {
+      "source": "aDgfTP2rV",
+      "sourceHandle": "1",
+      "target": "nvhiecc42",
+      "targetHandle": null,
+      "id": "u4a1O04Dn"
+    },
+    {
+      "source": "CqvMoHan9",
+      "sourceHandle": "1",
+      "target": "nvhiecc42",
+      "targetHandle": null,
+      "id": "AAXZJc1E1"
+    },
+    {
+      "source": "afcN2Nl97",
+      "sourceHandle": "2",
+      "target": "b6oMqri3E",
+      "targetHandle": null,
+      "id": "UHrip4Cbh"
+    },
+    {
+      "source": "g26dVAvQm",
+      "sourceHandle": "1",
+      "target": "raEaO2cfG",
+      "targetHandle": null,
+      "id": "TDr_xP77Z"
+    },
+    {
+      "source": "raEaO2cfG",
+      "sourceHandle": "1",
+      "target": "QjFeVXDLt",
+      "targetHandle": null,
+      "id": "57GVd2GUg"
+    },
+    {
+      "source": "QjFeVXDLt",
+      "sourceHandle": "1",
+      "target": "QH2w5YhQD",
+      "targetHandle": null,
+      "id": "BE2ZEw-CM"
+    },
+    {
+      "source": "-yhk4Lit6",
+      "sourceHandle": "1",
+      "target": "g26dVAvQm",
+      "targetHandle": null,
+      "id": "Q3xp5zRXm"
+    },
+    {
+      "source": "abUXrdfpu",
+      "sourceHandle": "2",
+      "target": "-yhk4Lit6",
+      "targetHandle": null,
+      "id": "zRFORRrfk"
+    },
+    {
+      "source": "abUXrdfpu",
+      "sourceHandle": "3",
+      "target": "-yhk4Lit6",
+      "targetHandle": null,
+      "id": "DeS6Xzunh"
+    },
+    {
+      "source": "QH2w5YhQD",
+      "sourceHandle": "1",
+      "target": "4dhJKjMSt",
+      "targetHandle": null,
+      "id": "LeTLmV-Nf"
+    },
+    {
+      "source": "4dhJKjMSt",
+      "sourceHandle": "1",
+      "target": "aSv4ZEQr0",
+      "targetHandle": null,
+      "id": "_duggalQS"
+    },
+    {
+      "source": "aSv4ZEQr0",
+      "sourceHandle": "2",
+      "target": "PGuZs5nAA",
+      "targetHandle": null,
+      "id": "ock41pgha"
+    },
+    {
+      "source": "aSv4ZEQr0",
+      "sourceHandle": "3",
+      "target": "PGuZs5nAA",
+      "targetHandle": null,
+      "id": "Iqc_injZ-"
+    },
+    {
+      "source": "2-upGovUr",
+      "sourceHandle": "1",
+      "target": "-yhk4Lit6",
+      "targetHandle": null,
+      "id": "VsuG1MZ-9"
+    },
+    {
+      "source": "aSv4ZEQr0",
+      "sourceHandle": "1",
+      "target": "npa50pHSl",
+      "targetHandle": null,
+      "id": "dwWQlnTjh"
+    },
+    {
+      "source": "abUXrdfpu",
+      "sourceHandle": "1",
+      "target": "npa50pHSl",
+      "targetHandle": null,
+      "id": "RbxnFuXto"
+    }
+  ]
+}
